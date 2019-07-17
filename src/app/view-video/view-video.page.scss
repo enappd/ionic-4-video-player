@@ -1,0 +1,29 @@
+/**
+* Ionic Full App  (https://store.enappd.com/product/ionic-full-app-ionic-4-full-app)
+*
+* Copyright © 2019-present Enappd. All rights reserved.
+*
+* This source code is licensed as per the terms found in the
+* LICENSE.md file in the root directory of this source tree.
+*/
+
+
+ion-header ion-toolbar{
+        --background: transparent;
+}
+
+ion-content{
+    --background:#000;
+}
+.rowSection{
+    height: 88%;
+    width: 100%;
+    iframe{
+        width:100%
+    }
+}    
+@media screen and (min-width: 768px){
+    iframe{
+        height: 400px;
+    }
+}

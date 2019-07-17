@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Video Example
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="video-list" no-padding mode="md">
+        <div class="imagediv" [ngStyle]="{'background-image' :'url(http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg)'}" (click)="playVideoLocal()">
+          <div class="inner">
+            <b>4.49</b>
+          </div>
+        </div>
+        <div class="details">
+          <div class="avatar">
+            <img src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg" />
+          </div>
+          <div class="title-block">
+            <div class="title">This Video is in Local</div>
+            <div class="extra">
+              <div class="author">Marvel</div>
+              <div class="dot"></div>
+              <div class="views">50 views</div>
+              <div class="dot"></div>
+              <div class="date">2 months ago</div>
+            </div>
+          </div>
+        </div>
+        <div class="imagediv" [ngStyle]="{'background-image' :'url(http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg)'}" (click)="playVideoHosted()">
+          <div class="inner">
+            <b>4.49</b>
+          </div>
+        </div>
+        <div class="details">
+          <div class="avatar">
+            <img src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg" />
+          </div>
+          <div class="title-block">
+            <div class="title">This Video is hosted on server</div>
+            <div class="extra">
+              <div class="author">Buck Bunny</div>
+              <div class="dot"></div>
+              <div class="views">50 views</div>
+              <div class="dot"></div>
+              <div class="date">2 months ago</div>
+            </div>
+          </div>
+        </div>
+   
+      <div class="imagediv" [ngStyle]="{'background-image' :'url(https://techcrunch.com/wp-content/uploads/2018/12/Screen-Shot-2018-12-19-at-4.16.05-PM.png?w=1704&h=928&crop=1)'}" (click)="viewVideo()">
+        <div class="inner">
+          <b>4.49</b>
+        </div>
+      </div>
+      <div class="details">
+        <div class="avatar">
+          <img src="https://techcrunch.com/wp-content/uploads/2018/12/Screen-Shot-2018-12-19-at-4.16.05-PM.png?w=1704&h=928&crop=1" />
+        </div>
+        <div class="title-block">
+          <div class="title">This Video is hosted on youtube</div>
+          <div class="extra">
+            <div class="author">Elon Musk</div>
+            <div class="dot"></div>
+            <div class="views">50 views</div>
+            <div class="dot"></div>
+            <div class="date">2 months ago</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</ion-content>
